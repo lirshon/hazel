@@ -1,0 +1,49 @@
+// OOP244 Workshop 2: Compound types and privacy
+// File	???????
+// Version 1.0
+// Date	???????????
+// Author	?????????
+// Description
+// ?????????????????????
+//
+//
+// Revision History
+///////////////////////////////////////////////////////////
+// Name			Date		Reason
+// 
+///////////////////////////////////////////////////////////
+#include <iostream>
+#include <cstring>
+using namespace std;
+#include "AccountNumber.h"
+
+namespace sict{
+  
+void setName(const char name[])
+void setAccountNumber(int bankCode, int branchCode, int accountNumber)
+	void display() const;
+	bool isValid() const;
+	
+	
+	void setName(const char name[]){
+	  strcpy(name);
+	}
+	
+	void setAccountNumber(int bankCode, int branchCode, int accountNumber){
+	 if(MIN_BANKCODE >= bankcode <= MAX_BANKCODE || MIN_BRANCHCODE > = branchCode < = MAX_BRANCHCODE || MIN_ACCNO >= accountNumber <= MAX_ACCNO)
+	  
+	}
+                    	bankCode should be >= MIN_BANKCODE and <= 
+               branchCode should be >= MIN_BRANCHCODE and <= MAX_BRANCHCODE
+                        accountNumber should be >= MIN_ACCNO and <= MAX_ACCNO.
+                Otherwise the _validAccNumber is set to false;
+                  The isValid()function returns the value of _validAccNumber
+
+	
+
+
+
+
+
+
+}
