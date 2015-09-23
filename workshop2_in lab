@@ -30,16 +30,21 @@ void setAccountNumber(int bankCode, int branchCode, int accountNumber)
 	}
 	
 	void setAccountNumber(int bankCode, int branchCode, int accountNumber){
-	 if(MIN_BANKCODE >= bankcode <= MAX_BANKCODE || MIN_BRANCHCODE > = branchCode < = MAX_BRANCHCODE || MIN_ACCNO >= accountNumber <= MAX_ACCNO)
+	 if(MIN_BANKCODE >= bankcode <= MAX_BANKCODE && MIN_BRANCHCODE > = branchCode < = MAX_BRANCHCODE && MIN_ACCNO >= accountNumber <= MAX_ACCNO)
 	  
+	  return true;
+	  
+	  
+	  return false;
 	}
-                    	bankCode should be >= MIN_BANKCODE and <= 
-               branchCode should be >= MIN_BRANCHCODE and <= MAX_BRANCHCODE
-                        accountNumber should be >= MIN_ACCNO and <= MAX_ACCNO.
-                Otherwise the _validAccNumber is set to false;
-                  The isValid()function returns the value of _validAccNumber
-
 	
+      bool isValid() const{
+      return 	_validAccNumber;
+      }
+                    
+
+	http://stackoverflow.com/questions/29036254/member-functions-that-are-sometimes-const
+	check this site out .
 
 
 
